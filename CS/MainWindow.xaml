@@ -1,0 +1,63 @@
+﻿<dx:ThemedWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxh="http://schemas.devexpress.com/winfx/2008/xaml/heatmap" 
+    xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+    x:Class="HeatmapDataSource.MainWindow"
+    Title="MainWindow" Height="500" Width="800">
+    <Grid>
+        <dxh:HeatmapControl ToolTipEnabled="True">
+            <dxh:HeatmapControl.ToolTipOptions>
+                <dxh:HeatmapToolTipOptions Pattern="X: {X}&#x0a;Y: {Y}" />
+            </dxh:HeatmapControl.ToolTipOptions>
+            <dxh:HeatmapControl.DataAdapter>
+                <dxh:HeatmapDataSourceAdapter
+                    DataSource="{Binding}"
+                    XArgumentDataMember="Country"
+                    YArgumentDataMember="Product"
+                    ColorDataMember="Value"/>
+            </dxh:HeatmapControl.DataAdapter>
+            <dxh:HeatmapControl.ColorProvider>
+                <dxh:HeatmapRangeColorProvider ApproximateColors="true" 
+                                               LegendItemPattern="{}{VP1:0%} - {VP2:0%}">
+                    <dxh:HeatmapRangeColorProvider.Palette>
+                        <dxc:CustomPalette>
+                            <dxc:CustomPalette.Colors>
+                                <Color>Red</Color>
+                                <Color>White</Color>
+                                <Color>Green</Color>
+                            </dxc:CustomPalette.Colors>
+                        </dxc:CustomPalette>
+                    </dxh:HeatmapRangeColorProvider.Palette>
+                    <dxh:HeatmapRangeColorProvider.RangeStops>
+                        <dxh:HeatmapRangeStop Value="0" Type="Percentage"/>
+                        <dxh:HeatmapRangeStop Value="-10"/>
+                        <dxh:HeatmapRangeStop Value="-2.5"/>
+                        <dxh:HeatmapRangeStop Value="0"/>
+                        <dxh:HeatmapRangeStop Value="2.5"/>
+                        <dxh:HeatmapRangeStop Value="10"/>
+                        <dxh:HeatmapRangeStop Value="1" Type="Percentage"/>
+                    </dxh:HeatmapRangeColorProvider.RangeStops>
+                </dxh:HeatmapRangeColorProvider>
+            </dxh:HeatmapControl.ColorProvider>
+            <dxh:HeatmapControl.Label>
+                <dxh:HeatmapLabel FontSize="8"/>
+            </dxh:HeatmapControl.Label>
+            <dxh:HeatmapControl.Legend>
+                <dxh:HeatmapLegend/>
+            </dxh:HeatmapControl.Legend>
+            <dxh:HeatmapControl.AxisX>
+                <dxh:HeatmapAxis AutoGrid="False" 
+                                 GridSpacing="1">
+                    <dxh:HeatmapAxis.Label>
+                        <dxc:AxisLabel Angle="30"/>
+                    </dxh:HeatmapAxis.Label>
+                </dxh:HeatmapAxis>
+            </dxh:HeatmapControl.AxisX>
+            <dxh:HeatmapControl.AxisY>
+                <dxh:HeatmapAxis/>
+            </dxh:HeatmapControl.AxisY>
+        </dxh:HeatmapControl>
+    </Grid>
+</dx:ThemedWindow>
