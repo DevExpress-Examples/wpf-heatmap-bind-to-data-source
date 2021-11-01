@@ -16,12 +16,12 @@ To bind a heatmap to a data source, follow the steps below:
 
 - Specify adapter properties listed below:
 
-    - [DataSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter.DataSource?v=21.2)
-    - [ColorDataMember](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter.ColorDataMember?v=21.2)
-    - [XArgumentDataMember](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter.XArgumentDataMember?v=21.2)
-    - [YArgumentDataMember](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter.YArgumentDataMember?v=21.2)
+    - [DataSource](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter.DataSource)
+    - [ColorDataMember](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter.ColorDataMember)
+    - [XArgumentDataMember](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter.XArgumentDataMember)
+    - [YArgumentDataMember](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter.YArgumentDataMember)
 
-- Assign the adapter object to the [HeatmapControl.DataAdapter](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapControl.DataAdapter?v=21.2) property.
+- Assign the adapter object to the [HeatmapControl.DataAdapter](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapControl.DataAdapter) property.
 
 <!-- default file list -->
 ## Files to Look At
@@ -33,7 +33,7 @@ To bind a heatmap to a data source, follow the steps below:
 
 ## Documentation
 
-- [HeatmapControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapControl?v=21.2)
+- [HeatmapControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapControl)
 
 ## More Examples
 
