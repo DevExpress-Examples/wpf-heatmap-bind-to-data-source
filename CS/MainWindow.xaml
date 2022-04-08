@@ -5,12 +5,15 @@
     xmlns:dxh="http://schemas.devexpress.com/winfx/2008/xaml/heatmap" 
     xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
     x:Class="HeatmapDataSource.MainWindow"
-    Title="MainWindow" Height="500" Width="800">
+    Title="Heatmap Control" Height="500" Width="800">
     <Grid>
         <dxh:HeatmapControl ToolTipEnabled="True">
             <dxh:HeatmapControl.ToolTipOptions>
                 <dxh:HeatmapToolTipOptions Pattern="X: {X}&#x0a;Y: {Y}" />
             </dxh:HeatmapControl.ToolTipOptions>
+            <dxh:HeatmapControl.Titles>
+                <dxc:Title Content="Balance of Trade" HorizontalAlignment="Center"/>
+            </dxh:HeatmapControl.Titles>
             <dxh:HeatmapControl.DataAdapter>
                 <dxh:HeatmapDataSourceAdapter
                     DataSource="{Binding}"
