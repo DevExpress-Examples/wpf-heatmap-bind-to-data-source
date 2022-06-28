@@ -12,7 +12,7 @@ Namespace HeatmapDataSource
         Inherits ThemedWindow
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
             DataContext = CreateDataSet("/Data/BalanceOfTrade.xml")
         End Sub
     End Class
