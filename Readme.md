@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# How to Create a Heatmap Chart Based on a Data Source
+# Chart for WPF - Create a Heatmap Chart Based on a Data Source
 
 This example shows how to create a heatmap and bind it to a data source. In this example, the heatmap obtains data from an XML file.
 
@@ -24,7 +24,7 @@ To bind a heatmap to a data source, follow the steps below:
 - Assign the adapter object to the [HeatmapControl.DataAdapter](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapControl.DataAdapter) property.
 
 <!-- default file list -->
-## Files to Look At
+## Files to Review
 
 - [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
 - [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
