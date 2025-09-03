@@ -13,7 +13,7 @@ This example shows how to create a heatmap and bind it to a data source. In this
 
 To bind a heatmap to a data source, follow the steps below:
 
-- Create a [HeatmapDataSourceAdapter](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter?v=21.2&p=netframework) object. 
+- Create a [HeatmapDataSourceAdapter](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.Heatmap.HeatmapDataSourceAdapter) object. 
 
 - Specify adapter properties listed below:
 
@@ -46,3 +46,4 @@ To bind a heatmap to a data source, follow the steps below:
 
 (you will be redirected to DevExpress.com to submit your response)
 <!-- feedback end -->
+
